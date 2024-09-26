@@ -1,0 +1,66 @@
+
+        body {
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            background-color: yellow;
+            background-image: url(https://static.vecteezy.com/ti/fotos-gratis/p1/17281720-fotografia-de-comida-profissional-close-up-de-um-prato-de-lasanha-em-um-fundo-cinza-escuro-gratis-foto.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+        }
+
+        .inicial {
+            border: solid rgb(1, 26, 255);
+            border-radius: 12px;
+            background-color: rgb(0, 4, 245);
+            color: rgb(251, 251, 251);
+            margin-bottom: 10px;
+        }
+
+        .inicial h1, .inicial p {
+            text-align: center;
+        }
+
+        .section {
+            border: solid rgb(4, 28, 248);
+            border-radius: 12px;
+            width: 40%;
+            padding: 40px;
+            background-color: rgb(5, 43, 255);
+            color: rgb(237, 236, 247);
+            text-align: justify;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+
+        
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            cursor: pointer;
+            color: rgb(243, 243, 243);
+            padding: 10px;
+            border-radius: 12px;
+            margin-bottom: 2px;
+            text-align: center;
+        }
+
+        
+        .conteudo {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        input[type="checkbox"]:checked + label + .conteudo {
+            max-height: 400px; 
+            padding: 20px;
+            background-color: rgb(0, 29, 248);
+            color: rgb(254, 249, 249);
+            border: solid rgb(13, 0, 255);
+            border-radius: 12px;
+        }
